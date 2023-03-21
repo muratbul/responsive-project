@@ -2,10 +2,7 @@ body {
   margin: 0;
 }
 
-
-*,
-*::before,
-*::after{
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
@@ -21,7 +18,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--clr-light-200);
+  background-color: var(--clr-light-100);
   text-align: center;
   z-index: 100;
   width: 100%;
@@ -58,7 +55,6 @@ header {
   width: 1em;
   border: 2px;
   position: relative;
-  
 }
 
 .nav-toggle-label span::before,
@@ -75,20 +71,17 @@ header {
   top: 4px;
 }
 
-
-
 nav {
   position: absolute;
   text-align: left;
   top: 100%;
   right: 0;
-  background: var(--clr-light-200);
+  background: var(--clr-light-100);
   width: 100%;
   text-align: center;
   transform: scale(1,0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
-  
 }
 
 nav ul {
@@ -113,7 +106,6 @@ nav a {
   letter-spacing: 0.1px;
   opacity: 0;
   transition: opacity 150ms ease-in-out ; 
-
 }
 
 nav a:hover {
@@ -129,7 +121,6 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
-  
 }
 
 .nav-action {
@@ -139,12 +130,13 @@ nav a:hover {
   padding: 12px 24px;
   display: none;
   margin-right: 2.5%;
-
  } 
 
  .header-container {
   display: flex;
   margin-left: clamp(1%, 24px, 32%);
+  margin-top: clamp(23px, 23px, 34.5px);
+  margin-bottom: clamp(23px, 23px, 34.5px);
   max-height: 96px;
  }
 
@@ -152,23 +144,36 @@ nav a:hover {
 .headline-section {
   display: flex;
   flex-wrap: wrap;
-  border: 5px solid green;
-
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  
 }
 
 .headline-container {
-   
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 24px;
+  text-align: center;
+  margin-top: 24px;
+  width: 100%;
 }
 
 .headline-bold {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
-  font-size: 56px;
-  line-height: 107%;
+  font-size: 40px;
+  line-height: 121%;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: -1px;
   color: var(--clr-dark-900);
-
 }
 
 .headline-small {
@@ -177,12 +182,18 @@ nav a:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
+  color: var(--clr-dark-900);
+  margin-top: 24px;
 
 }
 
 .headline-button {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin-top: 24px;
 }
 
 .headline-button-text {
@@ -191,8 +202,9 @@ nav a:hover {
   font-weight: 600;
   font-size: 0.875em;
   line-height: 143%;
-  display: flex;
-  align-items: center;
+  margin-top: 16px;
+  margin-left: 20px;
+  
 }
 
 .headline-button-action {
@@ -209,42 +221,99 @@ nav a:hover {
 }
 
 
-.headline-image {
-  display: none;
+.headline-image { 
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-inline: 1rem;
+  margin-bottom: 1em;
 
 }
 
-@media only screen and (min-width: 700px) {
+.headline-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+
+}
+
+/* Features */
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-light-200);
+  width: 100%;
+  position: relative;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.feature-one-title, .feature-two-title, .feature-three-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-dark-900);
+  margin-top: 1em;
+  
+}
+
+.feature-one-top, .feature-two-top, .feature-three-top {
+  margin-left: 1em;
+}
+
+.feature-one-text, .feature-two-text, .feature-three-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: var(--clr-dark-900);
+  margin-top: 1em;
+}
+
+/* Responsive Section */
+
+
+@media only screen and (min-width: 744px) {
   .nav-toggle-label {
     display: none;
   }
 
   .header-container {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
 
-  .nav-logo {
-
-    
+  .headline-image img {
+    content: url(/images/headline-image-tablet.svg);
   }
 
   .nav-action {
     display: block;
-
   }
 
   nav { 
     all: unset;
-
   }
 
   nav a {
     opacity: 1;
-
   }
 
   nav ul {
@@ -267,4 +336,114 @@ nav a:hover {
   }
 
 }
+
+/* 1024px */
+
+@media only screen and (min-width: 1024px) { 
+
+  .headline-image {
+    width: 100%;
+    content: url(/images/headline-image-large.svg);
+  }
+
+  .headline-bold {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 107%;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+
+
+
+  .headline-container {
+    max-width: 630px;
+  }
+
+  .feature-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .feature-boxes {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+  }
+
+  .feature-one, .feature-two, .feature-three {
+    justify-content: space-between;
+    max-width: 340px;
+    margin: 1em;
+
+  }
+
+  .feature-one-title, .feature-two-title, .feature-three-title {
+   justify-content: flex-start;
+
+  }
+
+  .feature-one-text, .feature-two-text, .feature-three-text {
+    text-align: left;
+  }
+
+  
+}
+
+/* 1440px */
+
+
+@media only screen and (min-width: 1440px) {
+
+
+  .headline-section {
+    border: 1px solid green;
+    display: flex;
+    width: 100%;
+  }
+
+  .headline-container {
+    border: 1px solid red;
+    max-width: 940px;
+    flex: 1;
+    justify-content: flex-start;
+  }
+  
+  .headline-bold {
+    text-align: left;
+
+  }
+
+  .headline-image img {
+    max-width: 538px;
+    height: auto;
+    flex: 1;
+  }
+
+  .headline-button {
+    max-width: 457px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .headline-button-text {
+    text-align: left;
+    align-items: center;
+    margin-top: 0;
+
+  }
+
+  .headline-image {
+    border: 1px solid red;
+    max-width: 490px;
+    height: auto;
+    content: url(/images/headline-image-1440+.svg);
+  }
+}
+
   
