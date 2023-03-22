@@ -313,14 +313,13 @@ nav a:hover {
   align-items: center;
   margin-inline: min(24px);
   margin-top: min(24px);
-  border: 1px solid red;
 }
 
 .section-two-image img {
   justify-content: center;
   width: 100%;
   height: auto;
-  border: 1px solid green;
+
 }
 
 .section-two-text {
@@ -441,7 +440,7 @@ nav a:hover {
 
 /* 1024px */
 
-@media only screen and (min-width: 1024px) { 
+@media only screen and (min-width: 1024px) and (max-width: 1439px) { 
 
   .headline-image {
     width: 100%;
@@ -503,28 +502,42 @@ nav a:hover {
 
   .section-two-container {
     width: 100%;
+
   }
 
   .section-two-text {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    justify-content: space-between;
   }
   
   .section-two-header {
-    grid-column: 1;
-    grid-row: 1;
-  
+    max-width: 415.5px;
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 133%;
   }
 
+  .section-two-mid {
+    max-width: 415.5px;
+    margin-right: min(32px);
+
+    
+  }
   .section-two-middle {
-    grid-column: 2;
-    grid-row: 1
+    text-align: left;
+    font-size: 1em;
+    line-height: 150%;
+    letter-spacing: 0.1px;
   }
 
   .section-two-list {
-    grid-column: 2;
-    grid-row: 2;
+    text-align: left;
+    font-size: 1em;
+    line-height: 150%;
+    letter-spacing: 0.1px;
   }
 }
 
