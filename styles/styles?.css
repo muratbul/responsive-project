@@ -135,7 +135,6 @@ nav a:hover {
   font-weight: 700;
   font-size: 1em;
   line-height: 150%;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.1px;
@@ -413,7 +412,7 @@ nav a:hover {
 
   /* Section Two */
 
-  .section-two-text {
+   .section-two-text {
     justify-content: center;
     align-items: center;
     max-width: 696px;
@@ -434,13 +433,14 @@ nav a:hover {
   .section-two-list {
     font-size: 1em;
     margin-top: 1.5em;
-  }
+  } 
 
 }
 
+
 /* 1024px */
 
-@media only screen and (min-width: 1024px) and (max-width: 1439px) { 
+@media only screen and (min-width: 1024px) { 
 
   .headline-image {
     width: 100%;
@@ -502,14 +502,18 @@ nav a:hover {
 
   .section-two-container {
     width: 100%;
-
+    border: 1px solid green;
+    display: flex;
   }
 
   .section-two-text {
+    
     width: 100%;
+    border: 1px solid red;
     display: flex;
     margin-top: 64px;
     margin-bottom: 64px;
+    align-items: flex-start;
     justify-content: space-between;
   }
   
@@ -518,12 +522,14 @@ nav a:hover {
     text-align: left;
     font-size: 1.5em;
     line-height: 133%;
+    margin: 0;
+    
   }
 
   .section-two-mid {
-    max-width: 415.5px;
+    
     margin-right: min(32px);
-
+    margin: 0;
     
   }
   .section-two-middle {
@@ -531,6 +537,7 @@ nav a:hover {
     font-size: 1em;
     line-height: 150%;
     letter-spacing: 0.1px;
+    margin: 0;
   }
 
   .section-two-list {
