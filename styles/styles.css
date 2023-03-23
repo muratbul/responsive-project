@@ -377,7 +377,7 @@ nav a:hover {
   }
 
   .headline-image img {
-    content: url(/images/headline-image-tablet.svg);
+    content: url(images/headline-image-tablet.svg);
   }
 
   .nav-action {
@@ -444,7 +444,7 @@ nav a:hover {
 
   .headline-image {
     width: 100%;
-    content: url(/images/headline-image-large.svg);
+    content: url(images/headline-image-large.svg);
   }
 
   .headline-bold {
@@ -495,7 +495,7 @@ nav a:hover {
     width: 100%;
   }
   .section-two-image img {
-    content: url(/images/section-two-1024.svg);
+    content: url(images/section-two-1024.svg);
     width: 100%;
     height: auto;
   }
@@ -590,7 +590,7 @@ nav a:hover {
   .headline-image {
     max-width: 490px;
     height: auto;
-    content: url(/images/headline-image-1440.svg);
+    content: url(images/headline-image-1440.svg);
   }
 }
 
