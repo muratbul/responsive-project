@@ -349,14 +349,98 @@ nav a:hover {
   align-items: center;
   text-align: center;
   letter-spacing: 0.1px;
+}
 
-  }
 
 .section-two-list ul {
   list-style-position: outside;
   padding-left: 12px;
+}
 
-  }
+
+/* Testimonials  */
+
+.testimonials {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: min(30px);
+  font-family: 'Inter';
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card-2, .card-3 {
+  display: none;
+}
+
+.card-1, .card-2, .card-3 {
+  background: #F3F3F3;
+  border-radius: 8px;
+  padding: 24px;
+  align-items: center;
+  max-width: 327px;
+  height: auto;
+  position: relative;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 156%;
+  color: #000000;
+}
+
+.card-customer {
+  margin-top: 56px;
+}
+
+.card-name {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.card-top {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: 0.1px;
+}
+
+.card-bottom {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+
+}
+
+.card-socials, .facebook {
+  position: absolute;
+  right: 56px;
+  bottom: 24.99px;
+}
+
+.card-socials, .twitter {
+  position: absolute;
+  right: 24px;
+  bottom: 24.99px;
+}
+
+.testimonial-buttons {
+  margin: 1.875em;
+  display: block;
+}
+ 
 /* Responsive Section */
 
 
@@ -435,9 +519,28 @@ nav a:hover {
     margin-top: 1.5em;
   } 
 
-}
+  .testimonial-cards {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .card-2 {
+    order: 2;
+    display: block;
+    margin-left: 1em;
+    
+  }
 
+  .testimonial-buttons {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
 /* 1024px */
 
 @media only screen and (min-width: 1024px){ 
@@ -650,6 +753,7 @@ nav a:hover {
   }
 
 
-}
-
-  
+  .testimonial-buttons {
+    display: none;
+  }
+  }
