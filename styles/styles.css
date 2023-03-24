@@ -4,6 +4,7 @@ body {
 
 *, *::before, *::after{
   box-sizing: border-box;
+  font-family: 'Inter';
 }
 
 :root {
@@ -11,6 +12,8 @@ body {
   --clr-light-200: #f3f3f3;
   --clr-light-100: #fff;
 }
+
+
 
 header {
   display: flex;
@@ -99,7 +102,6 @@ nav a {
   color: #040404;
   text-decoration: none;
   font-size: 1em;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   line-height: 19px;
@@ -130,7 +132,6 @@ nav a:hover {
   padding: 12px 24px;
   display: none;
   margin-right: 2.5%;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 1em;
@@ -172,7 +173,6 @@ nav a:hover {
 }
 
 .headline-bold {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -185,7 +185,6 @@ nav a:hover {
 }
 
 .headline-small {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -205,7 +204,6 @@ nav a:hover {
 }
 
 .headline-button-text {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 0.875em;
@@ -220,7 +218,6 @@ nav a:hover {
   background: var(--clr-dark-900);
   border-radius: 32px;
   padding: 12px 24px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 1em;
@@ -264,7 +261,6 @@ nav a:hover {
 }
 
 .feature-one-title, .feature-two-title, .feature-three-title {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -282,7 +278,6 @@ nav a:hover {
 }
 
 .feature-one-text, .feature-two-text, .feature-three-text {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
@@ -298,7 +293,6 @@ nav a:hover {
 .section-two {
   width: 100%;
   background: var(--clr-dark-900);
-  font-family: 'Inter';
   font-style: normal;
   display: flex;
   flex-direction: row;
@@ -366,16 +360,17 @@ nav a:hover {
   position: relative;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .testimonial-cards {
   display: flex;
   flex-direction: column;
   margin-top: min(30px);
-  font-family: 'Inter';
   font-style: normal;
   justify-content: center;
   align-items: center;
+  width: 100%;
   
 }
 
@@ -402,11 +397,10 @@ nav a:hover {
 
 .card-customer {
   margin-top: 56px;
-}
+  }
 
 .card-name {
   margin-top: 1em;
-  margin-bottom: 1.5em;
 }
 
 .card-top {
@@ -424,22 +418,170 @@ nav a:hover {
 
 }
 
-.card-socials, .facebook {
+.card-socials .facebook {
   position: absolute;
   right: 56px;
-  bottom: 24.99px;
+  bottom: 25px;
+  
+  
 }
 
-.card-socials, .twitter {
+.card-socials .twitter {
   position: absolute;
   right: 24px;
-  bottom: 24.99px;
+  bottom: 25px;
 }
 
 .testimonial-buttons {
   margin: 1.875em;
-  display: block;
+  justify-content: center;
 }
+
+/* Call to Action */
+
+.CTA {
+  background-image: url(/images/CTA-mobile.svg);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F3F3F3;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 247px;
+}
+
+.cta-tagline {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+.cta-headline {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-top: 0.75rem;
+}
+
+.cta-button {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #000000;
+  background: #fff;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin-top: 1.25em;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-top: 50px;
+}
+
+.column-1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.col-1-list li {
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+
+ul{
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+/* Subscribe */
+
+.subscribe-input {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.subscribe-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+}
+
+label {
+  position: relative;
+}
+
+label input {
+  align-items: center;
+  border: none;
+  padding: 16px;
+  width: 315px;
+  background-color: rgba(255, 255, 255, 0.15);;
+  border-radius: 40px;
+
+  position: relative;
+}
+
+label button {
+  position: absolute;
+  border: none;
+  padding: 16px;
+  left: 255px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.newsletter {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+
  
 /* Responsive Section */
 
@@ -506,7 +648,6 @@ nav a:hover {
     flex-wrap: nowrap;
     font-size: 1.5em;
     margin-top: 1.5em;
-
   }
 
   .section-two-middle {
@@ -522,25 +663,37 @@ nav a:hover {
   .testimonial-cards {
     flex-direction: row;
     width: 100%;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .card-2 {
-    order: 2;
     display: block;
     margin-left: 1em;
+    width: 100%;
+  }
+
+  .card-socials .facebook {
+    display: none;
+  }
+
+  .CTA {
+    background-image: url(/images/CTA-tablet.svg);
     
   }
 
-  .testimonial-buttons {
-    order: 3;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
+  .cta-container {
+    max-width: 744px;
   }
+
+  .cta-headline {
+    font-size: 2.5em;
+    line-height: 120%;
+    letter-spacing: 0;
+    margin-top: 12px;
+  }
+}
 /* 1024px */
 
 @media only screen and (min-width: 1024px){ 
@@ -551,7 +704,6 @@ nav a:hover {
   }
 
   .headline-bold {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 56px;
@@ -649,10 +801,33 @@ nav a:hover {
     line-height: 150%;
     letter-spacing: 0.1px;
   }
+
+  .card-3{
+    display: block;
+    width: 100%;
+    margin-left: 1em;
+  }
+
+  .card-socials .facebook {
+    display: block;
+  }
+
+  .testimonial-buttons {
+    margin-top: 65px;
+    margin-bottom: 48px;
+  }
+
+  .CTA {
+    background-image: url(/images/CTA-tablet-large.svg);
+    height: 588px;
+  }
+
+  .cta-container {
+    max-width: 600px;
+  }
 }
 
 /* 1440px */
-
 
 @media only screen and (min-width: 1440px) {
 
@@ -752,8 +927,19 @@ nav a:hover {
     margin-top: 16px;
   }
 
+  .testimonial-cards {
+    margin-bottom: 96px;
+    margin-top: 96px;
+  }
 
+  .card-2, .card-3 {
+    margin-left: 30px;
+  }
   .testimonial-buttons {
     display: none;
   }
+
+  .CTA {
+    background-image: url(/images/CTA-1440.svg);
   }
+}
