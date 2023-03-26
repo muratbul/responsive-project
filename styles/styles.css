@@ -507,6 +507,7 @@ footer {
 
 .footer-logo {
   margin-top: 50px;
+  margin-bottom: 9px;
 }
 
 .column-container {
@@ -572,6 +573,10 @@ ul{
   padding-inline-start: 0px;
 }
 
+
+.column-1-logo {
+  display: none;
+}
 /* Subscribe */
 
 .subscribe-input {
@@ -1159,3 +1164,20 @@ form input {
   .newsletter {
     margin-top: 20px;
   }
+
+}
+
+@media only screen and (min-width: 1441px) {
+
+  .subscribe-box {
+    max-width: 360px;
+  }
+
+  label input {
+    width: 360px;
+  }
+
+  label button {
+    left: 300px;
+  }
+}
