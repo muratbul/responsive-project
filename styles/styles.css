@@ -757,10 +757,8 @@ form input {
   .footer-container {
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    
   
   }
 
@@ -965,6 +963,45 @@ form input {
   .cta-container {
     max-width: 600px;
   }
+
+  /* Footer */
+
+  .column-1-head img {
+    transform: translateY(-48px);
+  }
+
+  .column-container {
+    width: 708px;
+    margin-left: min(32px);
+    margin-top: 120px;
+    margin-bottom: 45px;
+  }
+
+  .column-1 {
+    width: 228px;
+  }
+
+  .column-2 {
+    width: 240px;
+  }
+
+  .column-3 {
+    width: 240px;
+  }
+
+  .subscribe-box {
+    max-width: 240px;
+    margin-top: 120px;
+    margin-right: 32px
+  }
+
+  label input {
+    width: 240px;
+  }
+
+  label button {
+    left: 176px;
+  }
 }
 
 /* 1440px */
@@ -1082,4 +1119,43 @@ form input {
   .CTA {
     background-image: url(/images/CTA-1440.svg);
   }
-}
+
+  .footer-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-1-head img {
+    display: flex;
+  visibility: hidden;  }
+
+  .column-container {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 96px 0px;
+    width: 875px;
+  }
+
+  .column-1, .column-2, .column-3 {
+    justify-content: flex-start;
+  }
+
+  .column-1-logo {
+    display: flex;
+    transform: translateY(-40px);
+    margin-right: 140px;
+  }
+
+  .subscribe-box {
+    margin: 0;
+    width: 228px;
+  }
+
+  label input {
+    width: 228px;
+  }
+
+  .newsletter {
+    margin-top: 20px;
+  }
