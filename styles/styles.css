@@ -440,7 +440,7 @@ nav a:hover {
 /* Call to Action */
 
 .CTA {
-  background-image: url(/images/CTA-mobile.svg);
+  background-image: url(images/CTA-mobile.svg);
   background-size: cover;
   height: 500px;
   display: flex;
@@ -663,7 +663,7 @@ form input {
   }
 
   .headline-image img {
-    content: url(/images/headline-image-tablet.svg);
+    content: url(images/headline-image-tablet.svg);
   }
 
   .nav-action {
@@ -742,7 +742,7 @@ form input {
   /* CTA */
 
   .CTA {
-    background-image: url(/images/CTA-tablet.svg);
+    background-image: url(images/CTA-tablet.svg);
     
   }
 
@@ -843,7 +843,7 @@ form input {
 
   .headline-image {
     width: 100%;
-    content: url(/images/headline-image-large.svg);
+    content: url(images/headline-image-large.svg);
   }
 
   .headline-bold {
@@ -893,7 +893,7 @@ form input {
     width: 100%;
   }
   .section-two-image img {
-    content: url(/images/section-two-1024.svg);
+    content: url(images/section-two-1024.svg);
     width: 100%;
     height: auto;
   }
@@ -961,7 +961,7 @@ form input {
   }
 
   .CTA {
-    background-image: url(/images/CTA-tablet-large.svg);
+    background-image: url(images/CTA-tablet-large.svg);
     height: 588px;
   }
 
@@ -1060,7 +1060,7 @@ form input {
   .headline-image {
     max-width: 490px;
     height: auto;
-    content: url(/images/headline-image-1440.svg);
+    content: url(images/headline-image-1440.svg);
     border-radius: 12px;
   }
 
@@ -1084,7 +1084,7 @@ form input {
   }
 
   .section-two-image {
-    content: url(/images/section-two-1440.svg);
+    content: url(images/section-two-1440.svg);
     max-width: 490px;
   }
 
@@ -1122,7 +1122,7 @@ form input {
   }
 
   .CTA {
-    background-image: url(/images/CTA-1440.svg);
+    background-image: url(images/CTA-1440.svg);
   }
 
   .footer-container {
